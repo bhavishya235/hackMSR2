@@ -165,9 +165,9 @@ class DictionaryTagger(object):
 
 splitter = Splitter()
 postagger = POSTagger()
-nlp = StanfordCoreNLP('http://corenlp.run', port=80)
+# nlp = StanfordCoreNLP('http://corenlp.run', port=80)
 print "ok"
-#nlp = StanfordCoreNLP(r'/Users/bhavishyamittal/Desktop/hack/stanford-corenlp/')
+nlp = StanfordCoreNLP(r'./stanford-corenlp/')
 # nlp = StanfordCoreNLP(path_or_host = stan_nlp_host, port = stan_nlp_port)
 dicttagger = DictionaryTagger(corpus)
 print "ok2"
