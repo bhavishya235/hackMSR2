@@ -59,7 +59,7 @@ def checkDependence(index, rel_type, parse_stan, pos):
 
 class Splitter(object):
     def __init__(self):
-        self.nltk_splitter = nltk.data.load('tokenizers/punkt/english.pickle')
+        self.nltk_splitter = nltk.data.load('./english.pickle')
         self.nltk_tokenizer = nltk.tokenize.TreebankWordTokenizer()
 
     def split(self, text):
